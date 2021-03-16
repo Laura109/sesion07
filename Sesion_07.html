@@ -4,23 +4,49 @@
     <title>Transformaciones</title>
     <style>
       html, body { margin: 0; padding: 0; overflow: hidden; }
-      #info {
+      #info 
+        
+     {
           position: absolute;
           padding: 10px;
           width: 100%;
           text-align: center;
           color: #FFFFFF;
       }
+        
+            p
+            {
+                color: skyblue;
+            }
+        
+            l
+            {
+                color: yellow;
+            }
+            
+            h3
+            {
+                color: darkturquoise;
+            }
+            
+            h
+            {
+                color: aquamarine;
+            }
+            
     </style>
   </head>
   <body>
-    <div id="info"><p id="transf">TRASLACIÓN</p>
-          Usar flecha arriba y abajo para mover sobre eje Y<br/>
-		  Usar flecha izquierda y derecha para mover sobre eje X<br/>
-		  Usar tecla 'Z' y 'X' para mover sobre eje Z<br/>
-		  Usar tecla 'O' para mover al origen<br/>
-		  Usar 'R' para rotar, 'T' para trasladar y 'E' para escalar<br/>
+    <div id="info"><p id="transf">﴾ TRASLACIÓN ﴿<p/>
+          <l>❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ ❀ </l>
+          <h3>INSTRUCCIONES:</h3>
+          <h>☼</h> Usar flecha ▲ y ▼ para mover sobre eje Y <br/><h>☼</h> Usar flecha ← y → para mover sobre eje X <br/>
+          <br>
+		  <h>☼</h> Usar tecla 'Z' y 'X' para mover sobre eje Z <br/><h>☼</h> Usar tecla 'O' para mover al origen <br/>
+          <br>
+		  <h>☼</h> Usar 'R' para rotar ↺ ↻, 'T' para trasladar y 'E' para escalar<br/>
     </div>
+      
     <script src="js/three.min.js"></script>
     <script>
         
@@ -43,6 +69,10 @@
 		function init() 
         
         {
+            
+            
+            //Para la seleccion de colores me ayude con el color picker de google, para escoger los eventos de teclado o los atajos de teclado me ayude de la aplicacion http://keycode.info/ y para la seleccion de simbolos que use en la parte de las instrucciones fue con la pagina https://fsymbols.com/es/
+            
 			//ESCENA
             
 			scene = new THREE.Scene();
@@ -125,12 +155,12 @@
 		  	var z = new THREE.Vector3( 0, 0, 1 );
 			var color1 = new THREE.Color("rgb(255, 255, 255)");//grillas color blanco
 		  	var color2 = new THREE.Color("rgb(255, 255, 255)");//grillas color blanco
-		  	var colorB = new THREE.Color("rgb(117, 255, 209)");//color aguamarina eje x
-		  	var colorV = new THREE.Color("rgb(179, 68, 252)");//color morado eje y
-		  	var colorO = new THREE.Color("rgb(255, 235, 54)");//color amarillo eje z
-			var colorRd = new THREE.Color( "rgb(61, 204, 185)" );//cara lateral verde
-		  	var colorGd = new THREE.Color( "rgb(161, 170, 255)" );//cara superior morado
-		  	var colorBd = new THREE.Color( "rgb(255, 181, 54)" );//cara frontal naranja 
+		  	var colorB = new THREE.Color("rgb(171, 72, 0)");//color aguamarina eje x
+		  	var colorV = new THREE.Color("rgb(23, 176, 106)");//color morado eje y
+		  	var colorO = new THREE.Color("rgb(161, 21, 76)");//color amarillo eje z
+			var colorRd = new THREE.Color( "rgb(245, 141, 66)" );//cara lateral verde
+		  	var colorGd = new THREE.Color( "rgb(155, 212, 186)" );//cara superior morado
+		  	var colorBd = new THREE.Color( "rgb(245, 81, 146)" );//cara frontal naranja 
 		  
 		  	//CREAR GRILLAS PARA EL ESCENARIO
             
@@ -187,7 +217,7 @@
 			//MOVER LA CÁMARA
 			camera.position.x = 0;
 			camera.position.y = 13;	 
-		  	camera.position.z = 17;			
+		  	camera.position.z = 19;			
 		  	camera.lookAt( origin );
     }
     
